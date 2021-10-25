@@ -9,10 +9,12 @@
    <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/hibernate_db</property>
    <property name="hibernate.connection.username">root</property>
    <property name="hibernate.connection.password">root</property>
-   <property name="hibernate.hbm2ddl.auto">update</property>
+ <!--  <property name="hibernate.hbm2ddl.auto">create</property> -->
    <property name="show_sql">true</property>
-   <mapping class="com.hibernate.demo.entity.Employee"/>
-   
+  <!--  <mapping class="com.hibernate.demo.entity.Employee"/> -->
+   <mapping class="com.hibernate.demo.entity.Customer"/>
+    <mapping class="com.hibernate.demo.entity.Address"/>
+    <mapping class="com.hibernate.demo.entity.Account"/>
 </session-factory>
 
 </hibernate-configuration>
